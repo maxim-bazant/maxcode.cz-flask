@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right, #222629, #474B4A);
+    color: white;
+    line-height: 1.6;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+/*  <--Index CSS-->  */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+section h1 {
+    font-size: 3.5rem;
+    margin: 50px;
+}
+section p {
+    font-size: 2rem;
+}
+section .btn {
+    color: white;
+    background-color: #28a745;
+}
+.index-btn {
+    font-size: 1.5rem;
+    margin: 25px;
+}
+.learn-more-btn {
+    font-size: 1.75rem;
+}
+
+
+/*  <--Base Navbar-->  */
+nav {
+    border-bottom: 4px solid #28a745;
+    z-index: 1000;
+}
+.sticky_navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar-brand {
+    margin-left: 10px;
+}
+.mynav .nav-item {
+    margin-right: 20px;
+    font-size: 20px;
+}
+.navbar-brand {
+    font-size: 20px;
+    margin-left: 30px;
+}
+.navbar-nav {
+    margin-right: 150px; /*to move the navbar text to the middle bc of navbar brand*/
+}
+.navbar-dark {
+    background-color: #343a40;
+}
+.nav-link:hover {
+    border-bottom: 2px solid white;
+}
+.active {
+    border-bottom: 2px solid white;
+}
+.dropdown-item:hover{
+    cursor: pointer;
+}
+.dropdown-item:hover {
+    background-color: #28a745;
+    font-weight: 500;
+}
+
+
+/*  <--Base Footer-->  */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: #343a40;
+    border-top: 4px solid #28a745;
+}
+footer div p {
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: white;
+    text-align: center;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+
+
+/*  <--Games Page and Card Style-->  */
+.outer-div{
+    margin-top: 100px;
+    margin-left: 80px;
+}
+.card {
+    display: inline-block;
+    margin: 50px;
+    border: 4px solid #28a745;
+    transition: 0.5s ease;
+    color: black;
+}
+.card-img-top {
+    border-bottom: 4px solid #28a745;;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+.card-text {
+    margin-bottom: 40px;
+}
+.game-header {
+    text-decoration: underline;
+    margin-top: 50px;
+}
+
+/* specigic game css */
+.scratch_painting {
+    margin: 50px;
+}
+
+.back-button {
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.scratch_game_header {
+    color: white;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+.game_text {
+    color: white;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.padding_between_image_and_text {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.game_text a {
+    color: #28a745;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+.game_text a:hover {
+    color: white;
+}
+
+#init_video{
+    margin-left: 40px;
+    margin-top: 60px;
+    margin-bottom: 2px;
+    border: 4px solid #28a745;
+}
+
+.audio_notification_text {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 50px;
+    margin-left: 40px;
+}

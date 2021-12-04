@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block home_active %}active{% endblock %}
+{% block games_active %}{% endblock %}
+{% block tutorials_active %}{% endblock %}
+
+{% block head %}
+<title>Home Page</title>
+{% endblock %}
+
+{% block body %}  
+
+<section id="home">
+    <h1>Student, Programmer, Gamedeveloper.</h1>
+    <a href="#about">
+        <button class="btn btn-lg learn-more-btn">Learn more!</button>
+    </a>
+</section>
+<section id="about">
+    <h1>Hi!</h1>
+    <p>My name is Maxim Bažant and I am <span id="age"></span> years old. <br>
+        I study at the Písnická grammar school.<br>
+        I love modern technology and programming.
+        <br>
+        <a href="{{ url_for('games') }}"><button class="btn btn-lg index-btn">Games</button></a>
+        <a href="{{ url_for('tutorials') }}"><button class="btn btn-lg index-btn">Tutorials and code</button></a>
+    </p>
+</section>
+
+{% endblock %}

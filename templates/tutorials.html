@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block home_active %}{% endblock %}
+{% block games_active %}{% endblock %}
+{% block tutorials_active %}active{% endblock %}
+
+{% block head %}
+<title>Tutorial Page</title>
+{% endblock %}
+
+{% block body %}
+<div class="outer-div">
+    {% for group_name_index in range(group_names|length) %}
+        <h1 class="game-header">{{ group_names[group_name_index] }} tutorials</h1>
+        {% for game in games_by_group_name[group_name_index] %}
+            <div class="card last_card" style="width: 19rem;">
+                <img src="{{ game['thumbnail']['S'] }}" class="card-img-top" alt="{{ game['name_en']['S'] }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ game['name_en']['S'] }}</h5>
+                    <p class="card-text">{{ game['year']['S'] }}</p>
+                    <a href="/tutorial/{{ game['game_id']['S'] }}" class="btn btn-success stretched-link">Learn more</a>
+                </div>
+            </div>
+        {% endfor %}
+    {% endfor %}    
+</div>
+{% endblock %}
+
